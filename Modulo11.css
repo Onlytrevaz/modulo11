@@ -27,7 +27,7 @@ header {
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 .produto {
 width: 100%; /* Para que os produtos ocupem 100% da largura em telas menores */
 display: block;
@@ -81,7 +81,8 @@ p {
 
 img {
     display: block;
+    text-align: left;
     margin: 0 auto; /* Centralizar horizontalmente */
     margin-top: 1.2cm;
-    margin-bottom: 3.5cm;
+    margin-bottom: 1.5cm;
 }
