@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 form {
@@ -19,6 +21,8 @@ header {
     background-image: url("https://64.media.tumblr.com/d4411ae0a03a3bbd9c51e9206557ec50/a84bbe8c5afd316b-19/s1280x1920/f01fb6ad3a999aadacb843c7f909d57220d833c2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
 .produto {
     width: 25%; /* Para exibir 4 produtos lado a lado em telas maiores */
@@ -27,10 +31,10 @@ header {
     
 }
 
-@media (max-width: 768px) {}
-.produto {
-width: 100%; /* Para que os produtos ocupem 100% da largura em telas menores */
-display: block;
+@media (max-width: 768px) {
+    .produto {
+        width: calc(50% - 20px);
+    }
 }
 h1 {
 color: rgb(0, 0, 0);
@@ -52,37 +56,37 @@ margin: 5px;
 margin-bottom: 1cm;
 cursor: pointer;
 text-align: center;
-{background-color: transparent;}
+background-color: transparent;
 }
 
 h2 {
-    margin-top: 12.5cm;
-    margin-left: 1cm;
-    margin-top: 5cm;
-    text-align: center;
-    margin: 0 auto; /* Centralizar horizontalmente */
-    margin-top: 1.2cm;
+margin-top: 12.5cm;
+margin-left: 1cm;
+margin-top: 5cm;
+text-align: center;
+margin: 0 auto; /* Centralizar horizontalmente */
+margin-top: 1.2cm;
 }
 
 h3 {
-    margin-top: 5cm;
-    margin-left: 1cm;
-    text-align: center;
-    margin: 0 auto; /* Centralizar horizontalmente */
+margin-top: 5cm;
+margin-left: 1cm;
+text-align: center;
+margin: 0 auto; /* Centralizar horizontalmente */
 }
 
 p {
-    text-align: center;
-    max-width: 15cm;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    margin: 0 auto; /* Centralizar horizontalmente */
+text-align: center;
+max-width: 15cm;
+font-size: 20px;
+color: rgb(0, 0, 0);
+margin: 0 auto; /* Centralizar horizontalmente */
 }
 
 img {
-    display: block;
-    text-align: left;
-    margin: 0 auto; /* Centralizar horizontalmente */
+display: flex;
+text-align: left;
+margin: 0 auto; /* Centralizar horizontalmente */
     margin-top: 1.2cm;
     margin-bottom: 1.5cm;
 }
