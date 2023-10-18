@@ -9,17 +9,16 @@
 
 <title>Lojinha</title>
 <style>
-/* Adicione os estilos CSS diretamente aqui ou vincule um arquivo CSS externo */
 .produtos-container {
-display: inline-block;
-flex-wrap: wrap;
+display: flex;
+flex-wrap: nowrap;
 justify-content: space-between;
 border-radius: 1cm;
 border-color: black;
 }
 
 .produto {
-width: calc(25% - 20px); /* 25% para 4 produtos em uma linha, com espaço entre eles */
+width: calc(25% - 20px); 
 margin: 10px;
 padding: 10px;
 border: 1px solid #ccc;
@@ -40,10 +39,9 @@ border-color: black;
 
 }
 
-
 @media (max-width: 768px) {
 .produto {
-width: calc(50% - 20px); /* 50% para 2 produtos em uma linha em telas menores */
+width: calc(50% - 20px); 
 }
 }
 </style>
@@ -59,30 +57,43 @@ width: calc(50% - 20px); /* 50% para 2 produtos em uma linha em telas menores */
 </header>
 
 <section id="secao1" style="display: none;">
-<!-- Conteúdo da Seção "Produtos" -->
+
 <h2>Produtos</h2>
 <div class="produtos-container">
+
+<div>
 <div class="produto">
 <img src="maça.jpg" alt="Produto 1">
 <h3>Maçã</h3>
 <p>Uma maçã colhida da melhor árvore dos campos. Ela está anciosa pra ser comprada.</p>
 <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+</div>
+
+<div>
+<div class="produto">
 <img src="banana.webp" alt="Produto 2">
 <h3>Banana</h3>
 <p>Um lindo bananão.</p>
 <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+</div>
+<div>
+    <div class="produto">
 <img src="pave.jpg" alt="Produto 3">
 <h3>Pavê</h3>
 <p>Mas é pavê ou é pra comer?</p>
-
 <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+</div>
+
+<div>
+<div class="produto">
 <img src="mangaaleitada.webp" alt="Produto 4">
 <h3>Manga Aleitada</h3>
 <p>Perigoso, cuidado.</p>
 <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
 </div>
-</section>
+</div>
 
+</section>
 <section id="secao2" style="display: none;">
 <!-- Conteúdo da Seção "Sobre a Lojinha" -->
 <h2>Sobre a Lojinha</h2>

@@ -30,11 +30,15 @@ header {
     margin: 10px;
     
 }
+produtos-container {
+display:flex;
+align-items: center;
+}
 
 @media (max-width: 768px) {
-    .produto {
-        width: calc(50% - 20px);
-    }
+.produto {
+width: calc(50% - 20px);
+}
 }
 h1 {
 color: rgb(0, 0, 0);
