@@ -9,25 +9,6 @@
 
 <title>Lojinha</title>
 <style>
-.produtos-container {
-display: flex;
-flex-wrap: nowrap;
-justify-content: space-between;
-border-radius: 1cm;
-border-color: black;
-}
-
-.produto {
-width: calc(25% - 20px); 
-margin: 10px;
-padding: 10px;
-border: 1px solid #ccc;
-text-align: center;
-display: inline-block;
-justify-content: space-between;
-border-radius: 1cm;
-border-color: black;
-}
 
 .produto img {
 max-width: 100%;
@@ -36,7 +17,6 @@ justify-content: space-between;
 border-radius: 0.3cm;
 border: 2px solid black;
 border-color: black;
-
 }
 
 @media (max-width: 768px) {
@@ -50,49 +30,43 @@ width: calc(50% - 20px);
 <header>
 <h1>Lojinha</h1>
 <div class="botoes">
-    <button id="mostrarSecao1">Produtos</button>
-     <button id="mostrarSecao2">Sobre a Lojinha</button>
-    <button id="mostrarCarrinho">Carrinho</button>
+<button id="mostrarSecao1">Produtos</button>
+<button id="mostrarSecao2">Sobre a Lojinha</button>
+<button id="mostrarCarrinho">Carrinho</button>
 </div>
-
 </header>
 
 <section id="secao1" style="display: none;">
 
 <h2>Produtos</h2>
-<div>
-<div class="produto">
+<div class="produtos-container">
 
-    <img src="maça.jpg" alt="Produto 1">
-    <h3>Maçã</h3>
-    <p>Uma maçã colhida da melhor árvore dos campos. Ela está anciosa pra ser comprada.</p>
-    <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
-</div>
-</div>
-<div>
 <div class="produto">
+<img src="maça.jpg" alt="Produto 1">
+<h3>Maçã</h3>
+<p>Uma maçã colhida da melhor árvore dos campos. Ela está anciosa pra ser comprada.</p>
+<button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+</div>
 
-    <img src="banana.webp" alt="Produto 2">
-    <h3>Banana</h3>
-    <p>Um lindo bananão.</p>
-    <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
-</div>
-</div>
-<div>
 <div class="produto">
+<img src="banana.webp" alt="Produto 2">
+<h3>Banana</h3>
+<p>Um lindo bananão.</p>
+<button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+</div>
 
-    <img src="pave.jpg" alt="Produto 3">
-    <h3>Pavê</h3>
-    <p>Mas é pavê ou é pra comer?</p>
-    <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
-</div>
-</div>
-<div>
 <div class="produto">
-    <img src="mangaaleitada.webp" alt="Produto 4">
-    <h3>Manga Aleitada</h3>
-    <p>Perigoso, cuidado.</p>
-    <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+<img src="pave.jpg" alt="Produto 3">
+<h3>Pavê</h3>
+<p>Mas é pavê ou é pra comer?</p>
+<button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+</div>
+
+<div class="produto">
+<img src="mangaaleitada.webp" alt="Produto 4">
+<h3>Manga Aleitada</h3>
+<p>Perigoso, cuidado.</p>
+<button class="adicionar-carrinho">Adicionar ao Carrinho</button>
 </div>
 </div>
 
@@ -102,10 +76,8 @@ width: calc(50% - 20px);
 <h2>Sobre a Lojinha</h2>
 <p>Bem vindo a lojinha, nesse lugar você vai encontrar muita comida perfeitamente programada e organizada<br>
 Tudo de graça, você nem precisa pagar. Só não dá pra levar, afinal nada disso existe de verdade.<br></p>
-<div>
 <div class="fotodoesqueleto">
 <img src="https://media.tenor.com/PVqEzQ8OjxwAAAAC/esqueleto-skeleton.gif" alt="dançinha">
-</div>
 </div>
 </section>
 

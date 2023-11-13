@@ -26,7 +26,7 @@ header {
 }
 .produto {
     width: 25%; /* Para exibir 4 produtos lado a lado em telas maiores */
-    display: Flex;
+    Display: flex;
     margin: 10px;
     
 }
