@@ -12,7 +12,7 @@ body {
 form {
     text-align: center;
 }
-
+/*lol*/
 header {
     background-color: rgb(80, 126, 149); 
     color: #fff;
@@ -25,21 +25,35 @@ header {
     max-height: 100%;
 }
 .produto {
-    width: 25%; /* Para exibir 4 produtos lado a lado em telas maiores */
-    Display: flex;
+    padding: 20px;
     margin: 10px;
-    
-}
-produtos-container {
-display:flex;
-align-items: center;
+    width: 25%; 
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 1cm;
+    border-color: black;
 }
 
-@media (max-width: 768px) {
+.produtos-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 1cm;
+    border-color: black;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@media (max-width: 768px) 
+{
+    
+.produtos-container {
+ flex-wrap: wrap;}
 .produto {
 width: calc(50% - 20px);
 }
 }
+
 h1 {
 color: rgb(0, 0, 0);
 font-size: 25px;
@@ -48,7 +62,6 @@ font-style: normal;
 -webkit-text-stroke-color: rgb(255, 255, 255);
 font: 100;
 margin: 0 auto; /* Centralizar horizontalmente */
-
 }
 
 button {
@@ -94,3 +107,8 @@ margin: 0 auto; /* Centralizar horizontalmente */
     margin-top: 1.2cm;
     margin-bottom: 1.5cm;
 }
+
+.fotodoesqueleto {
+display:flex;
+}
+
