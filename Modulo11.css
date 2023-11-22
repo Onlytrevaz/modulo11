@@ -106,9 +106,7 @@ text-align: left;
 margin: 0 auto; /* Centralizar horizontalmente */
     margin-top: 1.2cm;
     margin-bottom: 1.5cm;
+    border-color: #fff;
+    border-radius: 1cm;
+    border-style:initial;   
 }
-
-.fotodoesqueleto {
-display:flex;
-}
-
